@@ -49,6 +49,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.lifecycle.Lifecycle;
+import com.android.settings.display.SwitchStylePreferenceController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -140,6 +141,7 @@ public class DisplaySettings extends DashboardFragment {
                 KEY_AMBIENT_DISPLAY));
         controllers.add(new TapToWakePreferenceController(context));
         controllers.add(new TimeoutPreferenceController(context, KEY_SCREEN_TIMEOUT));
+        controllers.add(new SwitchStylePreferenceController(context));
         controllers.add(new VrDisplayPreferenceController(context));
         controllers.add(new ShowOperatorNamePreferenceController(context));
         controllers.add(new SystemThemePreferenceController(context));
